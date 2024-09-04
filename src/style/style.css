@@ -55,6 +55,38 @@ footer{
     z-index: 1000;
     display: flex;
 }
+.balao{
+    color: #2D6056;
+    font-size: 30px;
+    margin: 10px;
+    padding-left: 20px;
+    width: 75%;
+    height: 80px;
+    background-color: #b0dcd4;
+    border: 5px double #81b5ab;
+    border-radius: 25px 40px 40px 0px;
+    animation: balao 10s forwards;
+    position: fixed;
+    z-index: 999;
+}
+@keyframes balao {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    25%{
+      opacity: 1;
+      visibility: visible;
+    }
+    75%{
+        opacity: 1;
+        visibility: visible;
+    }  
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 /*Pagina principal*/
 .bemvindo_gradiente{
     background: linear-gradient(to bottom, #FFFFEF, #B0DCD4);
@@ -70,6 +102,13 @@ footer{
 }
 .bemvindo p{
     font-size: 40px;
+	color: #2d6056;
+}
+.objetivo p {
+	color: #2d6056;
+}
+.conteudo p {
+	color: #2d6056;
 }
 .bemvindo_botao{
     background-color: #E4A2AF;
@@ -288,6 +327,12 @@ footer{
     justify-content: center;
     gap: 2em;
 }
+.container h2 {
+	color: #81B5AB;
+}
+.container p {
+	color: #2d6056;
+}
 .card {
     border-radius: 2em;
     width: 300px;
@@ -364,6 +409,7 @@ figure {
 	font-size: 20px;
 	text-align: center;
 	margin-bottom: 20px;
+	color: #2d6056;
 }
 .p_fig{
 	background:linear-gradient(to bottom, #E4A2AF, #D37E8E);
@@ -377,6 +423,12 @@ figure {
 	margin: 0 auto;
 	border: 5px dashed #D37E8E;
 }
+.num_dica h2 {
+	color: #2d6056;
+}
+.num_dica_1 h2 {
+	color: #AF4F61;
+}
 .card_dicas {
     display: flex;
     justify-content: left;
@@ -387,10 +439,10 @@ figure {
     border-radius: 30px;
     transition: width 0.5s ease; 
     overflow: hidden;
-    margin-left: 170px;
+    margin-left: 290px;
 }
 .card_dicas:hover {
-    width: 1180px;
+    width: 900px;
 }
 .num_dica {
     position: absolute;
@@ -436,6 +488,16 @@ figure {
     display: flex;
     flex-direction: column;
     gap: 7px;
+    padding: 20px; 
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+	margin-left: 160px;
+}
+.content_dicas_1{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
     padding: 22px; 
     text-align: justify;
     opacity: 0;
@@ -443,12 +505,25 @@ figure {
 	margin-left: 160px;
 }
 .content_dicas h2 {
+	color: #81B5AB;
 	font-size: 35px;
 }
 .content_dicas p {
+	color: #2d6056;
+	font-size: 25px;
+}
+.content_dicas_1 h2 {
+	color: #E4A2AF;
+	font-size: 35px;
+}
+.content_dicas_1 p {
+	color: #AF4F61;
 	font-size: 25px;
 }
 .card_dicas:hover .content_dicas {
+    opacity: 1;
+}
+.card_dicas:hover .content_dicas_1{
     opacity: 1;
 }
 .card_dados {
@@ -458,6 +533,7 @@ figure {
 	position: relative;
 	transition: 0.5s ease;
 	background-color: #81B5AB;
+    border: #FFFFEF double 7px;
 	border-radius: 30px;
 	width: 400px;
 	height: 350px;
@@ -497,7 +573,13 @@ figure {
 }
 .content_dados p {
 	font-size: 30px;
-	text-align: center;	
+	text-align: center;
+	color: #D1F0EA;
+}
+.content_dados h2{
+	font-size: 30px;
+	text-align: center;
+	color: #2d6056;
 }
 .card_dados:hover .content_dados {
     top: 130px;
@@ -511,7 +593,7 @@ figure {
     position: relative;
     background-color: #FFFFEF;
     border-radius: 30px;
-    margin-left: 170px;
+    margin-left: 140px;
 	border: 5px solid #D37E8E;
 }
 .card_pg .img-box_1 img {
@@ -533,8 +615,10 @@ figure {
 .content_pg p {
 	font-size: 30px;
 	width: 700px;
+	color: #2D6056;
 }
 .content_pg h2 {
 	font-size: 30px;
-	text-align: center
+	text-align: center;
+	color: #81B5AB;
 }
