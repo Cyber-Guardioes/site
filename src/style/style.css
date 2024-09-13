@@ -31,7 +31,7 @@ nav ul{
 nav ul li a{
     color: #81B5AB;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 30px;
 }
 nav ul li a:hover {
     color: #2d6056;
@@ -40,7 +40,7 @@ nav ul li a:hover {
     height: 70px;/*tamanho exato do nav na vertical*/
 }
 .titulo{
-    font-size: 55px;
+    font-size: 50px;
     color: #D37E8E;
 }
 
@@ -121,11 +121,22 @@ footer{
     justify-content: space-around;
     z-index: 1000;
     display: flex;
+	transition: 0.75s;
+	cursor: pointer;
+}
+.bemvindo_botao:hover {
+    background-color: #AF4F61;	
+}
+.bemvindo_botao p:hover {
+    color: #E4A2AF;	
 }
 .bemvindo_botao p{
     color: #D0546B;
-    text-decoration: underline #E4A2AF;
     font-size: 30px;
+}
+.bemvindo_botao a {
+    text-decoration: none;
+    color: inherit; 
 }
 .Guardiao{
     margin-left: auto;
@@ -141,13 +152,6 @@ footer{
         transform: translateX(0); 
         opacity: 1;
     }
-}
-.objetivo p{
-    font-size: 37px;
-}
-.objetivo{
-    border-bottom: 10px dotted #B0DCD4;
-    border-color: linear-gradient(to bottom, #D37E8E, #B0DCD4);
 }
 .conteudo table{
     width: 80%;
@@ -174,13 +178,26 @@ footer{
     align-items: center;
     justify-content: space-around;
     display:flex;
+	transition: 0.75s;
+	cursor: pointer;
+}
+.conteudo_botao:hover {
+    background-color: #AF4F61;	
+}
+.conteudo_botao p:hover {
+    color: #E4A2AF;	
 }
 .conteudo_botao p{
     color: #D0546B;
-    text-decoration: underline #E4A2AF;
     font-size: 30px;
 
 }
+.conteudo_botao a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
 .integrantes{
     width: 100%;
     margin-left: 0px;
@@ -392,13 +409,14 @@ figure {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2em;
+        gap: 4em;
     }
     .tituloFerramentas h2 {
         font-size: 1.45rem;
     }
 }
 /*PÁGINA INFOGRÁFICO*/
+/*Acesso à Internet: Oportunidades e Desafios*/
 .container_inf {
     display: flex;
     flex-wrap: wrap;
@@ -423,6 +441,7 @@ figure {
 	margin: 0 auto;
 	border: 5px dashed #D37E8E;
 }
+/* Dicas para Pais e Responsáveis */
 .num_dica h2 {
 	color: #2d6056;
 }
@@ -439,7 +458,7 @@ figure {
     border-radius: 30px;
     transition: width 0.5s ease; 
     overflow: hidden;
-    margin-left: 290px;
+    margin-left: 205px;
 }
 .card_dicas:hover {
     width: 900px;
@@ -526,6 +545,7 @@ figure {
 .card_dicas:hover .content_dicas_1{
     opacity: 1;
 }
+/*Acesso à Internet: Dados Estatísticos*/
 .card_dados {
 	display: flex;
     justify-content: center;
@@ -535,7 +555,7 @@ figure {
 	background-color: #81B5AB;
     border: #FFFFEF double 7px;
 	border-radius: 30px;
-	width: 400px;
+	width: 300px;
 	height: 350px;
 }
 .card_dados:hover {
@@ -585,40 +605,73 @@ figure {
     top: 130px;
     height: 250px;
 }
+/*Perigos da Internet para Crianças e Adolescentes*/
 .card_pg {
     display: flex;
     justify-content: left;
-    width: 1180px;
+    width: 1090px;
     height: 300px;
     position: relative;
     background-color: #FFFFEF;
     border-radius: 30px;
-    margin-left: 140px;
+    margin-left: 90px;
 	border: 5px solid #D37E8E;
 }
-.card_pg .img-box_1 img {
+.card_pg .img-box_1 {
+	position: relative;
 	width: 100%;
 	height: 100%;
+}
+.card_pg .img-box_1 img {
+	width: auto;
+	height: 120%;
 	object-fit: cover;
 	scale: 0.75;
 	margin-left: -10px;
 	border-radius: 30px;
 	border: 5px dashed #D37E8E;
+	position: absolute;
+	top: -30px;
+	left: -20px;
 }
 .card_pg .content_pg {
 	display: flex;
     flex-direction: column;
     gap: 25px;
 	margin-top: 30px;
-    text-align: left;
+	left: 350px;
+	position: absolute;
 }
 .content_pg p {
 	font-size: 30px;
 	width: 700px;
 	color: #2D6056;
+	text-align: justify;
 }
 .content_pg h2 {
 	font-size: 30px;
 	text-align: center;
 	color: #81B5AB;
+}
+/*PÁGINA SOBRE NÓS*/
+.conteudo_sobre_nos {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+.conteudo_sobre_nos h2{
+	font-size: 50px;
+	color: #D37E8E;
+}
+.conteudo_sobre_nos p{
+	font-size: 35px;
+	text-align: left;
+	color: #2D6056;
+	background-color: #81B5AB;
+	border-radius: 30px;
+	padding: 35px;
+	border: 4px dashed #5C9B8F;
+}
+.linha {
+	border-bottom: 10px dotted #B0DCD4;
+    border-color: linear-gradient(to bottom, #D37E8E, #B0DCD4);
 }
