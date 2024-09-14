@@ -683,8 +683,22 @@ figure {
 	border-radius: 30px;
 	padding: 35px;
 	border: 4px dashed #5C9B8F;
+
 }
 .linha {
 	border-bottom: 10px dotted #B0DCD4;
     border-color: linear-gradient(to bottom, #D37E8E, #B0DCD4);
+}
+.introducao{
+    width: auto;
+    height: 420px;
+    display: flex; 
+	border-bottom: 3px solid #B0DCD4;
+}
+.introducao h2{
+	color: #488C7F;
+	font-size: 60px;
+	text-align: center;
+	padding: 40px;
+	margin-top: 80px;
 }
